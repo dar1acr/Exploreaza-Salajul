@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style_foler_index/index_style_characters .css">
+    <link rel="stylesheet" href="style_foler_index/index_navbar+slideshow_style.css">
+    <link rel="stylesheet" href="style_foler_index/index_upper_info.css">
+    <link rel="stylesheet" href="style_foler_index/index_buttons_style.css">
+    <link href='https://fonts.googleapis.com/css?family=Caesar Dressing' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chau Philomene One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=M PLUS Code Latin' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="upper_info">
+        <div class="upper_text">©Wikipedia</div>
+        <br>
+        <div class="titlul">Explorează Sălajul</div>
+        <div class="titlul-2">TURISMUL AUTENTIC</div>
+        <br>
+    </div>
+    <div class="line">
+        ❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁❁
+    </div>
+    <div class="main_content">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="upper_text">©Wikipedia</div>
+                <img src="../../img/img1.jpg" style="width:100%;">
+                <div class="text">Porolissum</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="upper_text">©Wikipedia</div>
+                <img src="../../img/img2.jpg" style="width:100%;">
+                <div class="text">Grădina Botanică „Vasile Fati” din Jibou</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="upper_text">©Wikipedia</div>
+                <img src="../../img/img3.jpg" style="width:100%;">
+                <div class="text">Grădina zmeilor</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="upper_text">©Salvati casa memoriala Iuliu Maniu</div>
+                <img src="../../img/img4.jpg" style="width:100%;">
+                <div class="text">Casa memorială Iuliu Maniu</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="upper_text">©Wikipedia</div>
+                <img src="../../img/img5.jpg" style="width:100%;">
+                <div class="text">Rezervația naturală Izvoarele Barcăului</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    <br>
+
+
+    <br><br>
+    <center>
+        <h1 class="info">Mai multe informații și mai multe atracții</h1>
+    </center>
+    <div class="map-container" id="map">
+        <center><img src="../../img/Salaj.jpg" alt="Map" /></center>
+        <a href>
+            <div class="porolissum"></div>
+        </a>
+        <a href>
+            <div class="casa_memoriala_ilmaniu"></div>
+        </a>
+        <a href>
+            <div class="jb_gradina"></div>
+        </a>
+        <a href>
+            <div class="muz_istorie_jd"></div>
+        </a>
+        <a href>
+            <div class="gr_zmeilor"></div>
+        </a>
+        <a href>
+            <div class="mihai_viteazu_monument"></div>
+        </a>
+        <a href>
+            <div class="apa_curgatoare_somes"></div>
+        </a>
+        <a href>
+            <div class="apa_curgatoare_barcau"></div>
+        </a>
+        <a href>
+            <div class="apa_curgatoare_agrij"></div>
+        </a>
+    </div>
+    <script src=>
+        //partea de slide show
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+    </script>
+</body>
+
+</html>
