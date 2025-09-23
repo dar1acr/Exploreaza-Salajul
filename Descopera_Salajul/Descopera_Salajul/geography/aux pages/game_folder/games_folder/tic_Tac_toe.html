@@ -1,21 +1,25 @@
 <html>
+
 <head>
     <style>
         * {
             margin: 0;
             padding: 0;
         }
+
         body {
-            background-image:url("../../img/img2.jpg");
-            background-size: 100% 150%;
-            text-align: center;
+            background-image: url("../../../img/img2.jpg");
+            background-size: cover;
+
         }
+
         .container {
             height: 70vh;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         .game {
             height: 60vmin;
             width: 60vmin;
@@ -24,16 +28,18 @@
             gap: 1.5vmin;
             justify-content: center;
         }
+
         .box {
             height: 18vmin;
             width: 18vmin;
             border-radius: 1rem;
             border: none;
-            box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
             font-size: 8vmin;
             color: red;
             background-color: yellow;
         }
+
         #reset {
             padding: 1rem;
             font-size: 1.25rem;
@@ -42,9 +48,11 @@
             border-radius: 1rem;
             border: none;
         }
+
         .box:hover {
             background-color: chocolate;
         }
+
         #new-btn {
             padding: 1rem;
             font-size: 1.25rem;
@@ -53,27 +61,55 @@
             border-radius: 1rem;
             border: none;
         }
+
         #msg {
             font-size: 8vmin;
         }
+
         .msg-container {
             height: 30vmin;
+            text-align: center;
         }
+
         .hide {
             display: none;
         }
-        .fun-facts-{
 
+        .home {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            background-color: orangered;
+            position: fixed;
+            background-size: cover;
+            border-radius: 50%;
+            color: white;
+            border-right-width: 5px;
+            border-color: rgba(190, 51, 1, 0.707);
+            font-size: 40px;
+        }
+
+        .home:hover {
+            cursor: pointer;
+            border-bottom-color: rgb(167, 46, 2);
+            border-top-color: rgb(246, 144, 107);
+            border-right-color: rgba(190, 51, 1, 0.707);
+            border-right-width: 10px;
         }
     </style>
 </head>
+
 <body>
     <div class="msg-container hide">
         <p id="msg">Câștigător</p>
         <button id="new-btn">Joc nou</button>
     </div>
+    <a href="../../../index.html"><button class="home">🏠︎</button></a>
     <main>
-        <h1>Potrivește trei cu un prieten</h1>
+
+        <center>
+            <h1>X și O cu Flori</h1>
+        </center>
         <div class="container">
             <div class="game">
                 <button class="box"></button>
@@ -87,7 +123,7 @@
                 <button class="box"></button>
             </div>
         </div>
-        <button id="reset">Reset Joc</button>
+        <center><button id="reset">Reset Joc</button></center>
     </main>
 
     <script>
@@ -141,7 +177,7 @@
         };
 
         const showWinner = (winner) => {
-            msg.innerText = 'Câștigătorul este: '+winner;
+            msg.innerText = 'Câștigătorul este: ' + winner;
             msgContainer.classList.remove('hide');
             disableBoxes();
         };
@@ -153,7 +189,7 @@
                 let pos2Val = boxes[pattern[1]].innerText;
                 let pos3Val = boxes[pattern[2]].innerText;
 
-                if (pos1Val !== "" && pos2Val!=="" && pos3Val!=="" && 
+                if (pos1Val !== "" && pos2Val !== "" && pos3Val !== "" &&
                     pos1Val === pos2Val && pos2Val === pos3Val) {
                     showWinner(pos1Val);
                     hasWin = true;
@@ -180,4 +216,5 @@
         resetBtn.addEventListener('click', resetGame);
     </script>
 </body>
+
 </html>

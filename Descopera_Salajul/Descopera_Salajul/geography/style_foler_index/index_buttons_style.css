@@ -108,6 +108,16 @@
     color: white;
     align-items: flex-end;
 }
+.button-zmeu-runner{
+    width:100px;
+    height: 100px;
+    background-color: transparent;
+    border-color: blue;
+    border-width: 5px;
+    border-radius: 20px;
+    color: white;
+    align-items: flex-end;
+}
 .button-find-the-flower{
     width:100px;
     height: 100px;
