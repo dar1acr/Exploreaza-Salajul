@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Caesar Dressing' rel='stylesheet'>
     <style>
@@ -17,14 +18,13 @@
             color: white;
         }
 
-        .mySlides {
-            display: none
+        h1 {
+            font-size: 70px;
+            font-family: 'Caesar Dressing';
         }
 
-        img {
-            vertical-align: middle;
-            width: 100%;
-            height: 100vh;
+        h2 {
+            font-size: 50px;
         }
 
         .slideshow-container {
@@ -33,25 +33,31 @@
             margin: auto;
         }
 
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
         .prev,
         .next {
             cursor: pointer;
             position: absolute;
             top: 50%;
-            width: auto;
             padding: 16px;
-            margin-top: -22px;
             color: white;
             font-weight: bold;
             font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
             user-select: none;
+            transition: 0.6s ease;
         }
 
         .next {
             right: 0;
-            border-radius: 3px 0 0 3px;
         }
 
         .prev:hover,
@@ -67,7 +73,6 @@
             background-color: #bbb;
             border-radius: 50%;
             display: inline-block;
-            transition: background-color 0.6s ease;
         }
 
         .active,
@@ -90,15 +95,6 @@
             }
         }
 
-        h1 {
-            font-size: 70px;
-            font-family: 'Caesar Dressing';
-        }
-
-        h2 {
-            font-size: 50px;
-        }
-
         .section {
             display: flex;
             align-items: center;
@@ -108,12 +104,12 @@
             gap: 20px;
         }
 
-        .section .text-box {
+        .text-box {
             flex: 1;
             padding: 10px;
         }
 
-        .section .image-box {
+        .image-box {
             flex: 1;
             height: 300px;
             background-size: cover;
@@ -135,18 +131,18 @@
 
 <body>
     <center>
-        <h1>Grădina Zmeilor</h1>
+        <h1>Fauna râurilor din Sălaj</h1>
     </center>
 
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/RO_SJ_Natural_Reserve_Gradina_Zmeilor%2C_Galgau_Almasului.jpg">
+            <img src="https://www.fishsurfing.com/cdn/fspw-ro-images/22778/22e1c02c.webp">
         </div>
         <div class="mySlides fade">
-            <img src="https://locuridinromania.ro/wp-content/uploads/2016/11/Gradina-Zmeilor-din-comuna-Balan-flickr.jpg">
+            <img src="https://gdb.rferl.org/04230000-0aff-0242-db02-08dab0ff847f_cx0_cy8_cw0_w1080_h608.jpg">
         </div>
         <div class="mySlides fade">
-            <img src="https://cdn.g4media.ro/wp-content/uploads/2020/07/Gradina-Zmeilor-sursa-Turism-Zalau-640x381.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/RO_SJ_Raul_Somes_la_Letca_%282%29.JPG">
         </div>
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
@@ -160,54 +156,38 @@
 
     <div class="section">
         <div class="text-box">
-            <h2>Date Istorice</h2>
-            <p>Grădina Zmeilor este o rezervație naturală unică, situată în județul Sălaj, cunoscută pentru formațiunile
-                stâncoase spectaculoase care au inspirat legende locale. A fost declarată arie protejată în 1970 și
-                atrage vizitatori prin peisajul său neobișnuit și misterios.</p>
+            <h2>Fauna râului Barcău</h2>
+            <p>Râul Barcău adăpostește o faună acvatică variată, adaptată la cursurile sale lente și zonele mlăștinoase. Printre speciile comune se numără cleanul, carasul, roșioara și bibanul. În zonele mai adânci pot fi întâlniți somni și crap. Malurile sunt frecventate de stârci, rațe sălbatice și vidre. Vegetația riverană oferă adăpost pentru amfibieni precum broasca verde și tritonul.</p>
         </div>
-        <div class="image-box" style="background-image: url('https://locuridinromania.ro/wp-content/uploads/2024/06/Gradina-Zmeilor-4.jpg');"></div>
+        <div class="image-box" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Falco_vespertinus_3_%28Martin_Mecnarowski%29.jpg/500px-Falco_vespertinus_3_%28Martin_Mecnarowski%29.jpg');"></div>
     </div>
 
     <div class="section">
         <div class="text-box">
-            <h2>Explorare și joacă</h2>
-            <p>Copiii pot descoperi formațiunile cu nume fantastice precum „Fata Cătanii” sau „Zmeul”, iar adulții pot
-                face drumeții ușoare prin pădure și pot admira priveliștea panoramică. Locul este ideal pentru
-                fotografii și povești în aer liber.</p>
+            <h2>Fauna râului Agrij </h2>
+            <p>Râul Agrij, cu un curs mai scurt și rapid, este populat de specii adaptate la ape curate și oxigenate. Păstrăvul indigen este una dintre vedetele râului, alături de zglăvoacă și lipan. În zonele umbroase, pot fi observate broaște râioase, salamandre și insecte acvatice precum libelulele. Malurile sunt frecventate de păsări precum codobatura albă și mierla.</p>
         </div>
-        <div class="image-box" style="background-image: url('https://www.gazetanord-vest.ro/wp-content/uploads/2017/07/gradina-5.jpg');"></div>
+        <div class="image-box" style="background-image: url('https://gdb.rferl.org/04230000-0aff-0242-db02-08dab0ff847f_cx0_cy8_cw0_w1080_h608.jpg');"></div>
     </div>
 
     <div class="section">
         <div class="text-box">
-            <h2>Evenimente și relaxare</h2>
-            <p>Zona este frecvent vizitată pentru picnicuri, activități de ecoturism și evenimente culturale locale.
-                Traseele sunt accesibile și oferă o experiență liniștitoare în mijlocul naturii, cu aer curat și
-                liniște.</p>
+            <h2>Fauna râului Someș </h2>
+            <p>Râul Someș, unul dintre cele mai mari din nord-vestul României, are o faună extrem de diversă. În apele sale trăiesc somni, șalăi, știuci, plătici și morunași. Zonele mlăștinoase adăpostesc broaște, țestoase de apă și vidre. Pe maluri pot fi observate stârci cenușii, egrete și pescăruși. În pădurile riverane trăiesc vulpi, bursuci și căprioare.</p>
         </div>
-        <div class="image-box" style="background-image: url('https://i2.wp.com/cartitaplimbareata.ro/wp-content/uploads/Gradina_Zmeilor_Galgau_Almasului_Salaj_cartitaplimbareata.ro_002.jpg');"></div>
-    </div>
-
-    <div class="section">
-        <div class="text-box">
-            <h2>Date geografice</h2>
-            <p>Grădina Zmeilor se află în apropierea satului Gălgău Almașului, în Munții Meseș. Coordonatele aproximative
-                sunt 47°08′N și 23°15′E. Rezervația se întinde pe o suprafață de aproximativ 3 hectare și oferă un
-                peisaj carstic spectaculos.</p>
-        </div>
-        <div class="image-box" style="background-image: url('https://7minuni-transilvania.ro/app/wt/assets/images/2014-11-09%2015-49-59.jpg?v=1511330868');"></div>
+        <div class="image-box" style="background-image: url('https://monitorulcj.ro/documente/stories//2021/01/21/rata-sulitar.jpg');"></div>
     </div>
 
     <center>
-        <h2>5 fun facts</h2>
+        <h2>Fun facts despre râurile din Sălaj</h2>
     </center>
     <div class="container-facts">
         <ul>
-            <li>Stâncile au fost modelate de eroziune timp de mii de ani.</li>
-            <li>Legenda spune că zmeii s-au pietrificat aici după o luptă epică.</li>
-            <li>Rezervația este inclusă în rețeaua Natura 2000.</li>
-            <li>Este unul dintre cele mai fotografiate locuri din Sălaj.</li>
-            <li>Accesul este gratuit și traseul este semnalizat pentru vizitatori.</li>
+            <li>Barcăul are zone de izvor bine conservate, ideale pentru amfibieni.</li>
+            <li>Agrijul este preferat de păstrăvi și libelule datorită apei oxigenate.</li>
+            <li>Someșul susține o biodiversitate impresionantă, inclusiv mamifere și păsări rare.</li>
+            <li>Vidrele pot fi întâlnite pe toate cele trei râuri.</li>
+            <li>Toate cele trei ecosisteme sunt sensibile la poluare și intervenții umane.</li>
         </ul>
     </div>
 
