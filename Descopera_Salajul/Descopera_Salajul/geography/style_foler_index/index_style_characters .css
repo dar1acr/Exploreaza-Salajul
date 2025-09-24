@@ -111,7 +111,7 @@ img {
     margin-left: 950px;
     width: 4%;
     height: 8%;
-    background-color: rgb(12, 40, 169);
+    background-color: transparent;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -121,11 +121,11 @@ img {
 .apa_curgatoare_barcau{
     display: flex;
     position: absolute;
-    margin-top: -490px;
+    margin-top: -480px;
     margin-left: 360px;
     width: 4%;
     height: 8%;
-    background-color: rgb(3, 19, 88);
+    background-color: transparent;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -139,14 +139,18 @@ img {
     margin-left: 750px;
     width: 4%;
     height: 8%;
-    background-color: rgb(6, 25, 108);
+    background-color: transparent;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 .apa_curgatoare_agrij:hover {
     transform: scale(1.2);
 }
-
+.icon-fish{
+    text-align: center;
+    font-size: 50px;
+    color:black;
+}
 @media (max-width: 700px) {
     .porolissum {
         display: flex;
