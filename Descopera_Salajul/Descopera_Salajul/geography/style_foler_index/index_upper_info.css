@@ -34,34 +34,34 @@
     height: 100vh;
     width:100%;
     background-image: url("../img/img1.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     overflow: hidden;
 }
 .jb_gradina-info-kids{
     height: 100vh;
     width:100%;
     background-image: url("../img/img2.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     overflow: hidden;
 }
 .gr_zmeilor-info-kids{
     height: 100vh;
     width:100%;
     background-image: url("../img/img3.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     overflow: hidden;
 }
 .somes-info-kids{
     height: 100vh;
     width:100%;
     background-image: url("../img/somes.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     overflow: hidden;
 }
 .casa_memoriala_ilmaniu-info-kids{
     height: 100vh;
     width:100%;
     background-image: url("../img/img4.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     overflow: hidden;
 }

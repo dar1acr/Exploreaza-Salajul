@@ -20,9 +20,11 @@ img {
     margin-left: 690px;
     width: 4%;
     height: 8%;
-    background-color: rgb(72, 15, 2);
+    background-color:transparent;
     cursor: pointer;
     transition: transform 0.3s ease;
+    color:black;
+    font-size: 50px;
 }
 
 .porolissum:hover {
@@ -36,9 +38,11 @@ img {
     margin-left: 530px;
     width: 4%;
     height: 8%;
-    background-color: rgb(175, 90, 71);
+    background-color: transparent;
     cursor: pointer;
     transition: transform 0.3s ease;
+    color:black;
+    font-size: 50px;
 }
 
 .casa_memoriala_ilmaniu:hover {
@@ -52,9 +56,11 @@ img {
     margin-left: 615px;
     width: 4%;
     height: 8%;
-    background-color: rgb(30, 188, 83);
+    background-color: transparent;
     cursor: pointer;
     transition: transform 0.3s ease;
+    color:black;
+    font-size: 50px;
 }
 
 .muz_istorie_jd:hover {
@@ -68,9 +74,11 @@ img {
     margin-left: 900px;
     width: 4%;
     height: 8%;
-    background-color: rgb(14, 47, 18);
+    background-color: transparent;
     cursor: pointer;
     transition: transform 0.3s ease;
+    color:black;
+    font-size: 50px;
 }
 .gr_zmeilor:hover {
     transform: scale(1.2);
@@ -83,9 +91,11 @@ img {
     margin-left: 770px;
     width: 4%;
     height: 8%;
-    background-color: rgb(10, 52, 2);
+    background-color: transparent;
     cursor: pointer;
     transition: transform 0.3s ease;
+    color:black;
+    font-size: 50px;
 }
 .jb_gradina:hover {
     transform: scale(1.2);
@@ -97,9 +107,11 @@ img {
     margin-left: 580px;
     width: 4%;
     height: 8%;
-    background-color: rgb(116, 27, 7);
+    background-color: transparent;
     cursor: pointer;
     transition: transform 0.3s ease;
+    color:black;
+    font-size: 50px;
 }
 .mihai_viteazu_monument:hover {
     transform: scale(1.2);
