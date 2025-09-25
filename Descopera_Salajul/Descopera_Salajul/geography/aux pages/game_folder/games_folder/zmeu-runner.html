@@ -3,14 +3,16 @@
 
 <head>
     <style>
-        body{
+        body {
             background-color: black;
         }
+
         #score {
             text-align: center;
-            color:white;
+            color: white;
         }
-        #message{
+
+        #message {
             text-align: center;
         }
 
@@ -76,11 +78,31 @@
                 top: 225px;
             }
         }
+
+        .button-menu {
+            width: 50px;
+            height: 50px;
+            background-color: orangered;
+            position: fixed;
+            background-size: cover;
+            border-radius: 50%;
+            color: white;
+            border-right-width: 5px;
+        }
+
+        .button-menu:hover {
+            cursor: pointer;
+            border-bottom-color: rgb(167, 46, 2);
+            border-top-color: rgb(246, 144, 107);
+            border-right-color: rgba(190, 51, 1, 0.707);
+            border-right-width: 10px;
+
+        }
     </style>
 </head>
 
 <body>
-
+   <a href="../../../index.html"><button class="button-menu">↩</button></a>
     <div id="game">
         <div id="dino"></div>
         <div id="rock"></div>
@@ -93,7 +115,7 @@
         var dino = document.getElementById('dino');
         var rock = document.getElementById('rock');
         var score = document.getElementById('score');
-        var mesaj ="Game Over! Please close the browser.";
+        var mesaj = "Game Over! Please close the browser.";
         function jump() {
             dino.classList.add('jump-animation');
             setTimeout(() => {
@@ -106,22 +128,28 @@
             }
 
         });
+        document.addEventListener('click', () => {
+            if (!dino.classList.contains('jump-animation')) {
+                jump();
+            }
+
+        });
         setInterval(() => {
-            score.innerText= parseInt(score.innerText)+1;
+            score.innerText = parseInt(score.innerText) + 1;
             var dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue('top'));
             var rockLeft = parseInt(window.getComputedStyle(rock).getPropertyValue('left'));
-            if (rockLeft<0) {
-            rock.style.display='none';
+            if (rockLeft < 0) {
+                rock.style.display = 'none';
             }
-            else{
-                rock.style.display ='';
+            else {
+                rock.style.display = '';
             }
-            if(rockLeft<50 && rockLeft>0 && dinoTop>150){
+            if (rockLeft < 50 && rockLeft > 0 && dinoTop > 150) {
                 //document.getElementById('message').innerHTML =mesaj;
-               alert("Game Over! You got a score of: "+score.innerText+". PLay again?");
-               location.reload();
+                alert("Game Over! You got a score of: " + score.innerText + ". PLay again?");
+                location.reload();
             }
-        },50);
+        }, 50);
     </script>
 
 </body>
